@@ -1089,52 +1089,52 @@
         // 页面加载完成后初始化
         document.addEventListener('DOMContentLoaded', init);
         
-        // 添加一些模拟数据以便展示
-        function addMockData() {
-            if (records.length === 0) {
-                const mockRecords = [
-                    {
-                        id: Date.now() + 1,
-                        type: 'income',
-                        category: '工资',
-                        amount: 8000,
-                        date: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-                        description: '月度工资',
-                        timestamp: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).getTime()
-                    },
-                    {
-                        id: Date.now() + 2,
-                        type: 'expense',
-                        category: '饮食',
-                        amount: 1200,
-                        date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-                        description: '超市购物',
-                        timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).getTime()
-                    },
-                    {
-                        id: Date.now() + 3,
-                        type: 'expense',
-                        category: '交通',
-                        amount: 300,
-                        date: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
-                        description: '地铁公交费用',
-                        timestamp: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).getTime()
-                    },
-                    {
-                        id: Date.now() + 4,
-                        type: 'income',
-                        category: '奖金',
-                        amount: 2000,
-                        date: new Date().toISOString().split('T')[0],
-                        description: '项目奖金',
-                        timestamp: new Date().getTime()
-                    }
-                ];
+        // // 添加一些模拟数据以便展示
+        // function addMockData() {
+        //     if (records.length === 0) {
+        //         const mockRecords = [
+        //             {
+        //                 id: Date.now() + 1,
+        //                 type: 'income',
+        //                 category: '工资',
+        //                 amount: 8000,
+        //                 date: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        //                 description: '月度工资',
+        //                 timestamp: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).getTime()
+        //             },
+        //             {
+        //                 id: Date.now() + 2,
+        //                 type: 'expense',
+        //                 category: '饮食',
+        //                 amount: 1200,
+        //                 date: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        //                 description: '超市购物',
+        //                 timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000).getTime()
+        //             },
+        //             {
+        //                 id: Date.now() + 3,
+        //                 type: 'expense',
+        //                 category: '交通',
+        //                 amount: 300,
+        //                 date: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        //                 description: '地铁公交费用',
+        //                 timestamp: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).getTime()
+        //             },
+        //             {
+        //                 id: Date.now() + 4,
+        //                 type: 'income',
+        //                 category: '奖金',
+        //                 amount: 2000,
+        //                 date: new Date().toISOString().split('T')[0],
+        //                 description: '项目奖金',
+        //                 timestamp: new Date().getTime()
+        //             }
+        //         ];
                 
-                records = mockRecords;
-                localStorage.setItem('financeRecords', JSON.stringify(records));
-                init();
-            }
+            //     records = mockRecords;
+            //     localStorage.setItem('financeRecords', JSON.stringify(records));
+            //     init();
+            // }
         }
         
         // 添加模拟数据
